@@ -2,8 +2,7 @@ package no.pingpong;
 
 import org.junit.jupiter.api.Test;
 
-import static no.pingpong.RomanConvert.toRomanLessThan11;
-import static no.pingpong.RomanConvert.toRomanMoreThan10;
+import static no.pingpong.RomanConvert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanConverterTest {
@@ -74,7 +73,7 @@ public class RomanConverterTest {
     }
     @Test
     void shouldConvert47ToXLVII() {
-        assertEquals("XLVII", toRomanMoreThan10(47));
+        assertEquals("XLVII", toRomanMoreThan40(47));
     }
 
 

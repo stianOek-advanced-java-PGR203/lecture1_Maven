@@ -40,6 +40,19 @@ public class RomanConvert {
         return "XL";
     }
 
+    public static String toRomanMoreThan40(int number) {
+        String romaString = "";
+        if(number < 50) {
+            while (number > 10) {
+                romaString = "XL";
+                number -= 10;
+            }
+            romaString += toRomanLessThan11(number);
+
+        }
+        return romaString;
+    }
+
 
 
 
