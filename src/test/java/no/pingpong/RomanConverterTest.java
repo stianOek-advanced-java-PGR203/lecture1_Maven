@@ -68,7 +68,10 @@ public class RomanConverterTest {
     void shouldConvert39ToXXXIX() {
         assertEquals("XXXIX", toRomanMoreThan10(39));
     }
-
+    @Test
+    void shouldConvert40ToXL() {
+        assertEquals("XL", toRomanMoreThan10(40));
+    }
 
 
 }
