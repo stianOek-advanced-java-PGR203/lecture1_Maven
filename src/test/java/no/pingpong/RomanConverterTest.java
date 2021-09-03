@@ -31,4 +31,12 @@ public class RomanConverterTest {
     void shouldConvert6ToVI() {
         assertEquals("VI",toRoman(6));
     }
+    @Test
+    void shouldConvert7ToVII() {
+        assertEquals("VII",toRoman(7));
+    }
+    @Test
+    void shouldConvert8ToVIII() {
+        assertEquals("VIII",toRoman(8));
+    }
 }
