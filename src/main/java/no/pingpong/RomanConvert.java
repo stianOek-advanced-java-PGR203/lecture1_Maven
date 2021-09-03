@@ -28,11 +28,11 @@ public class RomanConvert {
 
     public static String toRomanMoreThan10(int number){
         String romanString = "";
-        if(number < 50){
+        if(number < 40){
 
-            for (int i = 10; i < number; i = 10) {
-                romanString += "X";
-                number -= i;
+            while (number > 10) {
+                    romanString += "X";
+                    number -= 10;
             }
             romanString += toRomanLessThan11(number);
         }
