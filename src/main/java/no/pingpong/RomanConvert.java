@@ -2,7 +2,9 @@ package no.pingpong;
 
 public class RomanConvert {
 
-    public String toRoman() {
-        return null;
+    public static String toRoman(int number) {
+        return "I";
     }
+
+
 }
