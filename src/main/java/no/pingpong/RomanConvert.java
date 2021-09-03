@@ -2,7 +2,7 @@ package no.pingpong;
 
 public class RomanConvert {
 
-    public static String toRoman(int number) {
+    public static String toRomanLessThan11(int number) {
         String romanString = "";
         if(number == 4) {
             romanString += "IV";
@@ -22,6 +22,16 @@ public class RomanConvert {
         }
         for (int i = 0; i < number; i++) {
             romanString += "I";
+        }
+            return romanString;
+    }
+
+    public static String toRomanMoreThan10(int number){
+        String romanString = "";
+        if(number < 20){
+            romanString += "X";
+            number -= 10;
+            romanString += toRomanLessThan11(number);
         }
             return romanString;
     }

@@ -2,54 +2,60 @@ package no.pingpong;
 
 import org.junit.jupiter.api.Test;
 
-import static no.pingpong.RomanConvert.toRoman;
+import static no.pingpong.RomanConvert.toRomanLessThan11;
+import static no.pingpong.RomanConvert.toRomanMoreThan10;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanConverterTest {
 
     @Test
     void shouldConvert1ToI() {
-        assertEquals("I",toRoman(1));
+        assertEquals("I", toRomanLessThan11(1));
     }
     @Test
     void shouldConvert2ToII() {
-        assertEquals("II",toRoman(2));
+        assertEquals("II", toRomanLessThan11(2));
     }
     @Test
     void shouldConvert3ToIII() {
-        assertEquals("III",toRoman(3));
+        assertEquals("III", toRomanLessThan11(3));
     }
     @Test
     void shouldConvert4ToIV() {
-        assertEquals("IV",toRoman(4));
+        assertEquals("IV", toRomanLessThan11(4));
     }
     @Test
     void shouldConvert5ToV() {
-        assertEquals("V",toRoman(5));
+        assertEquals("V", toRomanLessThan11(5));
     }
     @Test
     void shouldConvert6ToVI() {
-        assertEquals("VI",toRoman(6));
+        assertEquals("VI", toRomanLessThan11(6));
     }
     @Test
     void shouldConvert7ToVII() {
-        assertEquals("VII",toRoman(7));
+        assertEquals("VII", toRomanLessThan11(7));
     }
     @Test
     void shouldConvert8ToVIII() {
-        assertEquals("VIII",toRoman(8));
+        assertEquals("VIII", toRomanLessThan11(8));
     }
     @Test
     void shouldConvert9ToIX() {
-        assertEquals("IX",toRoman(9));
+        assertEquals("IX", toRomanLessThan11(9));
     }
     @Test
     void shouldConvert10ToX() {
-        assertEquals("X",toRoman(10));
+        assertEquals("X", toRomanLessThan11(10));
     }
     @Test
     void shouldConvert11ToXI() {
-        assertEquals("XI",toRoman(11));
+        assertEquals("XI", toRomanMoreThan10(11));
     }
+    @Test
+    void shouldConvert19ToXIV() {
+        assertEquals("XIV", toRomanMoreThan10(19));
+    }
+
 
 }
