@@ -10,6 +10,9 @@ public class RomanConvert {
         }else if(number == 5){
             romanString += "V";
             return romanString;
+        } else if(number > 5) {
+            romanString += "V";
+            number -= 5;
         }
         for (int i = 0; i < number; i++) {
             romanString += "I";
