@@ -28,13 +28,18 @@ public class RomanConvert {
 
     public static String toRomanMoreThan10(int number){
         String romanString = "";
-        if(number < 20){
-            romanString += "X";
-            number -= 10;
+        if(number < 50){
+
+            for (int i = 10; i < number; i = 10) {
+                romanString += "X";
+                number -= i;
+            }
             romanString += toRomanLessThan11(number);
         }
             return romanString;
     }
+
+
 
 
 

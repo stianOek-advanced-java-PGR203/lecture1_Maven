@@ -53,9 +53,22 @@ public class RomanConverterTest {
         assertEquals("XI", toRomanMoreThan10(11));
     }
     @Test
-    void shouldConvert19ToXIV() {
-        assertEquals("XIV", toRomanMoreThan10(19));
+    void shouldConvert19ToXIX() {
+        assertEquals("XIX", toRomanMoreThan10(19));
     }
+    @Test
+    void shouldConvert20ToXX() {
+        assertEquals("XX", toRomanMoreThan10(20));
+    }
+    @Test
+    void shouldConvert37ToXXXVII() {
+        assertEquals("XXXVII", toRomanMoreThan10(37));
+    }
+    @Test
+    void shouldConvert39ToXXXIX() {
+        assertEquals("XXXIX", toRomanMoreThan10(39));
+    }
+
 
 
 }
