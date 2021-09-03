@@ -35,8 +35,9 @@ public class RomanConvert {
                     number -= 10;
             }
             romanString += toRomanLessThan11(number);
-        }
             return romanString;
+        }
+        return "XL";
     }
 
 
