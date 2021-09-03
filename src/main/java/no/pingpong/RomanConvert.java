@@ -16,6 +16,9 @@ public class RomanConvert {
         }else if (number == 9){
             romanString += "IX";
             return romanString;
+        } else if( number == 10) {
+            romanString += "X";
+            return romanString;
         }
         for (int i = 0; i < number; i++) {
             romanString += "I";
