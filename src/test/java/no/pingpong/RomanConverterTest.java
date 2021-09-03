@@ -15,4 +15,8 @@ public class RomanConverterTest {
     void shouldConvert2ToII() {
         assertEquals("II",toRoman(2));
     }
+    @Test
+    void shouldConvert3ToIII() {
+        assertEquals("III",toRoman(3));
+    }
 }
