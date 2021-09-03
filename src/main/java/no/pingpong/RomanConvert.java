@@ -7,12 +7,16 @@ public class RomanConvert {
         if(number == 4) {
             romanString += "IV";
             return romanString;
+        }else if(number == 5){
+            romanString += "V";
+            return romanString;
         }
         for (int i = 0; i < number; i++) {
             romanString += "I";
         }
             return romanString;
     }
+
 
 
 }
